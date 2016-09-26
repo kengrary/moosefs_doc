@@ -74,7 +74,6 @@ BACK_LOGS = 50
 - 启动master server，mfsmaster启动后监听9419,9420,9421端口
 ```
 sbin/mfsmaster
-# ./mfsmaster
 open files limit has been set to: 16384
 working directory: /root/mfs/var/mfs
 lockfile created and locked
@@ -124,7 +123,6 @@ MASTER_PORT = 9420
 - 启动chunk server，chunk server启动后监听9422端口
 ```
 sbin/mfschunkserver
-[root@uat-server09 sbin]# ./mfschunkserver start
 open files limit has been set to: 16384
 working directory: /root/mfs/var/mfs
 lockfile created and locked
