@@ -170,10 +170,18 @@ mfsmetalogger daemon initialized properly
 ``` 
 ##MooseFS特性配置
 - 设置文件被拷贝的份数，拷贝份数一般小于或等于chunk server数量，如果设置超过chunk server数量，则只会产生等于chunk server数量的拷贝，-r参数是对目录进行递归设置拷贝数
-`bin/mfssetgoal –r 2 /path`
+```
+bin/mfssetgoal –r 2 /path
+```
 - 显示设置的拷贝数
-`bin/mfsgetgoal /path`
+```
+bin/mfsgetgoal /path
+```
 - 设置回收站保留被删除文件的时间，默认值为86400秒，即1天
-```bin/mfssettrashtime 300 /path```
+```
+bin/mfssettrashtime 300 /path
+```
 显示回收站保留被删除文件的时间
-```bin/mfsgettrashtime /path```
+```
+bin/mfsgettrashtime /path
+```
